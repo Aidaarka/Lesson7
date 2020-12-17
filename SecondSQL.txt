@@ -1,0 +1,20 @@
+create database ComputerCourses
+
+create table students (
+id_students integer,
+Full_name varchar(50), 
+mark integer,
+primary key (id_students));
+
+insert into students values
+			(1, 'Калиев Максим Владимирович', 4),
+			(3, 'Зарипова Элиза Альбертовна', 5),
+			(4, 'Мигранова Нургиза Азатовна', 3),
+			(5, 'Усманов Тимур Рустемович', 4),
+			(6, 'Буранов Ильсур Мархамович', 5);
+
+select * from students
+
+select * from students where mark = 5
+
+select COUNT(*) from students where mark = 5
